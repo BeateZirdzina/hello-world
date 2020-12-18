@@ -5,19 +5,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Recommender Systems – What are they? &middot; </title>
-        <meta name="description" content="A short theoretical introduction to recommender systems.">
+        <title>Recommendation Systems – What are they? &middot; </title>
+        <meta name="description" content="A short theoretical introduction to recommendation systems.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.78.2" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Recommender Systems – What are they?">
-<meta property="og:description" content="A short theoretical introduction to recommender systems.">
+        <meta property="og:title" content="Recommendation Systems – What are they?">
+<meta property="og:description" content="A short theoretical introduction to recommendation systems.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://BeateZirdzina.github.io/myblog/theory-intro/">
-        <link rel="stylesheet" href="https://BeateZirdzina.github.io/myblog/dist/site.css">
-        <link rel="stylesheet" href="https://BeateZirdzina.github.io/myblog/dist/syntax.css">
+<meta property="og:url" content="https://beatezirdzina.github.io/username.github.io/theory-intro/">
+        <link rel="stylesheet" href="https://beatezirdzina.github.io/username.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://beatezirdzina.github.io/username.github.io/dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -36,26 +36,22 @@
                     <div class="site-title-wrapper">
                         
                             <h1 class="site-title">
-                                <a href="https://BeateZirdzina.github.io/myblog/">My New Hugo Site</a>
+                                <a href="https://beatezirdzina.github.io/username.github.io/">My New Hugo Site</a>
                             </h1>
                         
                         
                         
-                            <a class="button-square button-social hint--top" data-hint="Twitter" aria-label="Twitter" href="https://twitter.com/XXX" rel="me" >
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
                         
                         
                         
-                        
-                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/XXX" rel="me">
+                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/BeateZirdzina/username.github.io" rel="me">
                                 <i class="fa fa-github-alt" aria-hidden="true"></i>
                             </a>
                         
                         
                         
                         
-                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:XXX@example.com">
+                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:beate.zirdzina@gmail.com">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </a>
                         
@@ -64,15 +60,15 @@
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/">Blog</a>
+        <a href="/username.github.io/">Blog</a>
     </li>
 
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/page/contact/">Contact</a>
+        <a href="/username.github.io/page/contact/">Contact</a>
     </li>
 
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/page/about/">About</a>
+        <a href="/username.github.io/page/about/">About</a>
     </li>
 
 
@@ -86,12 +82,12 @@
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Recommender Systems – What are they?</h1>
+    <h1 class="post-title" itemprop="name headline">Recommendation Systems – What are they?</h1>
     
-        <p class="post-description" itemprop="description">A short theoretical introduction to recommender systems.</p>
+        <p class="post-description" itemprop="description">A short theoretical introduction to recommendation systems.</p>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-11-20" itemprop="datePublished">Fri, Nov 20, 2020</time></span>
+        <span>Published <time datetime="2020-11-20" itemprop="datePublished">Fri, Nov 20, 20200</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -117,40 +113,40 @@ separate research area.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" ro
 into account the massive avalanche of information accessible via the Internet, not to mention the fact
 that the amount of information grows exponentially every moment. With this oversaturation of content
 users may find it more and more difficulties to reach the internet artefacts and information they want.
-Sometimes users don’t really even know what it is they are looking for – most often the case with
-Netflix and other watchable content especially. Different websites employ various solutions to cope
-with the problems of information filtering and data mining. Not to mention the fact that with new user&rsquo;s
-their preferences must be determined first. Up and coming and new items must be rated by the
-community as well. One user can only conceivably rate a small number of items at a time, so the rating
-matrix is sparse – the systems in place must be able to deal with the fact that similarities among groups
-and communities must be determined in a meagre matrix.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<p>The authors of “An Effective Model–Based Trust Collaborative Filtering for Explainable
-Recommendations” describe that: “Memory–based collaborative filtering is one of the recommendation
-system methods used to predict a user’s rating or preference by exploring historic ratings, but without
-incorporating any content information about users or items. It can be either item–based or user–based.”
-There are two steps to be taken to employ item–based Collaborative Filtering (CF) predictions:</p>
+Sometimes users don’t really even know <em>what it is</em> they are looking for – most often the case with
+Netflix and other watchable content especially. The amount of <em>memes</em> about finishing ones popcorn before even deciding on what to watch is no wonder in this context.</p>
+<p>Different websites employ various solutions to cope with the problems of information filtering and data mining. Not to mention the fact that with new user&rsquo;s, their preferences must be determined first. Up and coming and new items must be rated by the community as well. One user can only conceivably rate a small number of items at a time, so the rating matrix is sparse – the systems in place must be able to deal with the fact that similarities among groups and communities must be determined in a meagre matrix.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>For example, in the image below we can observe a very simplified collaborative filtering model and on the  right side I’ve put a recommendation for my Netflix account for the movie “V for Vendetta”. We can see that in Netflix the generated explainable recommendation appears in the form of the “91% Match” rating meaning that this content is 91% in line with content I’ve consumed before on this Netflix account. Below this there are more similar movies with a lesser Match result.</p>
+<p><figure>
+    <img src="../img/img15.png"/> 
+</figure>
+
+<figure>
+    <img src="../img/img14.png"/> 
+</figure>
+</p>
+<p>The authors of <em>An Effective Model–Based Trust Collaborative Filtering for Explainable Recommendations</em> describe that: “Memory–based collaborative filtering is one of the recommendation system methods used to predict a user’s rating or preference by exploring historic ratings, but without incorporating any content information about users or items. It can be either item–based or user–based.”</p>
+<p>There are two steps to be taken to employ item–based Collaborative Filtering (CF) predictions:</p>
 <ol>
 <li><strong>Select pair–based similarities</strong> – a variety of items similar to the content the user has
 already rated to be good.</li>
 <li><strong>Use users expressed opinions</strong> – be it through views or ratings, comments and so on – on
 these similar items to predict a rating for a predictor item.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
 </ol>
-<p>Now, the websites that employ this system do not do it out of the goodness of their heart and just
-to improve the user experience – which, admittedly is very important in its own right. The purpose of it
-is largely to lead to greater sales, longer watch time, more service subscriptions and more time spent on
-the website in question – which, most of the time, also means more time for ad–placement. For example,
-Hafed Zarzour et al. point out that “data gathered for three weeks in the summer of 2001 showed that
-between 20% and 40% of sales on Amazon are due to recommended products that do not belong to the
-shop’s 100,000 most sold products, and 60% of movies rented by Netflix are selected based on
-personalized recommendations.” Recommendation systems also have the added benefit of showing the
-user categories on the periphery of their interest which may lead to them discovering even more content
-they’re ready to pay for.
-Recommendation systems usually produce a list of recommendations in one of three ways:</p>
+<p>Now, the websites that employ this system do not do it out of the goodness of their heart and just to improve the user experience – which, admittedly is very important in its own right. The purpose of it is largely to lead to greater sales, longer watch time, more service subscriptions and more time spent on the website in question – which, most of the time, also means more time for ad–placement.</p>
+<p>For example, Hafed Zarzour et al. point out that “data gathered for three weeks in the summer of 2001 showed that between 20% and 40% of sales on Amazon are due to recommended products that do not belong to the shop’s 100,000 most sold products, and 60% of movies rented by Netflix are selected based on personalized recommendations.” Recommendation systems also have the added benefit of showing the user categories on the periphery of their interest which may lead to them discovering even more content they’re ready to pay for.</p>
+<p>Recommendation systems usually produce a list of recommendations in one of three ways:</p>
 <ol>
 <li>Collaborative Filtering,</li>
 <li>Content–based Filtering,</li>
 <li>Hybrid of These Two Approaches.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
 </ol>
+<p>The most basic differences between the first two filtering methods can be seen in the image below.</p>
+<p><figure>
+    <img src="../img/img.png"/> 
+</figure>
+
+<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -170,16 +166,15 @@ measurement. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x
 Explainable Recommendations; from the 11th International Conference on Information and Communication Systems
 (ICICS); Jordan <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
+<li id="fn:5" role="doc-endnote">
+<p>Source - <a href="https://towardsdatascience.com/brief-on-recommender-systems-b86a1068a4dd">https://towardsdatascience.com/brief-on-recommender-systems-b86a1068a4dd</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
 </section>
 
 </div>
 
         <footer class="post-footer clearfix"><div class="share">
-            <a class="icon-twitter" href="https://twitter.com/share?text=Recommender%20Systems%20%e2%80%93%20What%20are%20they%3f&url=https%3a%2f%2fBeateZirdzina.github.io%2fmyblog%2ftheory-intro%2f"
-                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
     </div>
 </footer>
 
@@ -194,7 +189,7 @@ Explainable Recommendations; from the 11th International Conference on Informati
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a href="https://BeateZirdzina.github.io/myblog/">My New Hugo Site</a>
+                        <a href="https://beatezirdzina.github.io/username.github.io/">My New Hugo Site</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -211,9 +206,9 @@ Explainable Recommendations; from the 11th International Conference on Informati
             </div>
         </footer>
 
-        <script src="https://BeateZirdzina.github.io/myblog/js/jquery-1.11.3.min.js"></script>
-        <script src="https://BeateZirdzina.github.io/myblog/js/jquery.fitvids.js"></script>
-        <script src="https://BeateZirdzina.github.io/myblog/js/scripts.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/scripts.js"></script>
     </body>
 </html>
 

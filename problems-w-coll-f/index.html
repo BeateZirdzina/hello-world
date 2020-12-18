@@ -15,9 +15,9 @@
         <meta property="og:title" content="Some Problems With Collaborative-Filtering">
 <meta property="og:description" content="Nothing is ever perfect">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://BeateZirdzina.github.io/myblog/problems-w-coll-f/">
-        <link rel="stylesheet" href="https://BeateZirdzina.github.io/myblog/dist/site.css">
-        <link rel="stylesheet" href="https://BeateZirdzina.github.io/myblog/dist/syntax.css">
+<meta property="og:url" content="https://beatezirdzina.github.io/username.github.io/problems-w-coll-f/">
+        <link rel="stylesheet" href="https://beatezirdzina.github.io/username.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://beatezirdzina.github.io/username.github.io/dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -36,26 +36,22 @@
                     <div class="site-title-wrapper">
                         
                             <h1 class="site-title">
-                                <a href="https://BeateZirdzina.github.io/myblog/">My New Hugo Site</a>
+                                <a href="https://beatezirdzina.github.io/username.github.io/">My New Hugo Site</a>
                             </h1>
                         
                         
                         
-                            <a class="button-square button-social hint--top" data-hint="Twitter" aria-label="Twitter" href="https://twitter.com/XXX" rel="me" >
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
                         
                         
                         
-                        
-                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/XXX" rel="me">
+                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/BeateZirdzina/username.github.io" rel="me">
                                 <i class="fa fa-github-alt" aria-hidden="true"></i>
                             </a>
                         
                         
                         
                         
-                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:XXX@example.com">
+                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:beate.zirdzina@gmail.com">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </a>
                         
@@ -64,15 +60,15 @@
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/">Blog</a>
+        <a href="/username.github.io/">Blog</a>
     </li>
 
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/page/contact/">Contact</a>
+        <a href="/username.github.io/page/contact/">Contact</a>
     </li>
 
     <li class="site-nav-item">
-        <a href="https://BeateZirdzina.github.io/myblog/page/about/">About</a>
+        <a href="/username.github.io/page/about/">About</a>
     </li>
 
 
@@ -91,7 +87,7 @@
         <p class="post-description" itemprop="description">Nothing is ever perfect</p>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-11-28" itemprop="datePublished">Sat, Nov 28, 2020</time></span>
+        <span>Published <time datetime="2020-11-28" itemprop="datePublished">Sat, Nov 28, 28280</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -105,60 +101,22 @@
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <h1 id="some-problems-with-collaborative-filtering">Some Problems With Collaborative Filtering</h1>
-<h3 id="sparsity">Sparsity</h3>
-<p>When wanting to realise a recommender system one has to face the fact that they work best when
-used with datasets the size of, for example, those that Netflix, Amazon and Facebook can offer – namely
-huge datasets. The largest part of users would only review few of the offered items, but this is then
-remedied by the fact that there are at the least tens of thousands of items and millions of users. H. Zazour
-et.al. (2020) notes that “One of the typical challenges that could be introduced by data sparsity is the
-Cold Start Problem. Since collaborative filtering methods make recommendations based on users’ past
-preferences, new users need to rate a sufficient number of items in order to let the recommendation
-system learn their preferences and make reliable recommendations.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p>Collaborative filtering methods are largely unable to supply accurate recommendations if the
-users have rated only a couple of items – this is to say that in such a situation the system has not received
-enough input to get to know the user well enough to group them together with their <em>preference peers</em>.</p>
+    <h3 id="sparsity">Sparsity</h3>
+<p>When wanting to realise a recommender system one has to face the fact that they work best when used with datasets the size of, for example, those that Netflix, Amazon and Facebook can offer –  huge datasets. The largest part of users would only review few of the offered items, but this is then remedied by the fact that there are at the least tens of thousands of items and <em>sometimes</em> millions of users.</p>
+<p>H. Zazour et.al. (2020) notes that “One of the typical challenges that could be introduced by data sparsity is the Cold Start Problem. Since collaborative filtering methods make recommendations based on users’ past preferences, new users need to rate a sufficient number of items in order to let the recommendation system learn their preferences and make reliable recommendations.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Collaborative filtering methods are largely unable to supply accurate recommendations if the users have rated only a couple of items – this is to say that in such a situation the system has not received enough input to get to know the user well enough to group them together with their <em>preference peers</em>.</p>
 <h3 id="scalability">Scalability</h3>
-<p>Scalability problems arise when the number of users and items grow exceedingly large – this will
-be a problem for traditional collaborative filtering method. Since model–based approaches use the entire
-dataset to train, new user ratings have to be analysed in real time to make an updated recommendation.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<p>However, fortunately in application, relative to the absolute number of items available for
-consumption, most users only review comparatively few items, and thus memory–based methods can
-react in a timely manner to new ratings and offer predictions in real time even when faced with extremely
-large datasets. Model–based approaches can avoid scalability issues by employing dimensionality reduction techniques, however they may suffer from computationally expensive matrix factorization and
-may lose useful information in the process. Thus, we can observe that there are some trade–offs to
-consider between scalability and performance in model–based approaches.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>Scalability problems arise when the number of users and items grow exceedingly large – this will be a problem for traditional collaborative filtering method. Since model–based approaches use the entire dataset to train, new user ratings have to be analysed in real time to make an updated recommendation.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>However, fortunately in application, relative to the absolute number of items available for consumption, most users only review comparatively few items, and thus memory–based methods can react in a timely manner to new ratings and offer predictions in real time even when faced with extremely large datasets.</p>
+<p>Model–based approaches can avoid scalability issues by employing dimensionality reduction techniques, however they may suffer from computationally expensive matrix factorization and may lose useful information in the process. Thus, we can observe that there are some trade–offs to consider between scalability and performance in model–based approaches.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <h3 id="dimensionality">Dimensionality</h3>
-<p>The aim of collaborative filtering is to find similarities or patterns between content or consumers
-to then conclude which content pieces / users are alike each other. Since there are a great lot of consumers
-and content, pairwise similarities are calculated in high–dimensions. This brings us to something called
-the Hughes Phenomenon or otherwise known as the peaking paradox – with a fixed size of training
-samples, the predictive power reduces as the dimensionality increases. To put it simply, Hughes
-observed that “measurements have a finite accuracy. The outcome of any set of measurements may
-thereby be represented as a vector (point) in a finite, discrete space. As different measurements may lead
-to the same representation point, this point may also be understood as a cell in which all indistinguishable
-outcomes are collected.” Two outcomes may result:<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>The aim of collaborative filtering is to find similarities or patterns between content or consumers to then conclude which content pieces / users are alike each other. Since there are a great lot of consumers and content, pairwise similarities are calculated in high–dimensions. This brings us to something called the <em>Hughes Phenomenon</em> or otherwise known as the peaking paradox – with a fixed size of training samples, the predictive power reduces as the dimensionality increases. To put it simply, Hughes observed that “measurements have a finite accuracy. The outcome of any set of measurements may thereby be represented as a vector (point) in a finite, discrete space. As different measurements may lead to the same representation point, this point may also be understood as a cell in which all indistinguishable outcomes are collected.” Two outcomes may result:<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <ol>
-<li>Concentration – Similarities between all consumers or content blend together and become the
-same. In this case memory–based collaborative filtering is unable to find the most similar content
-or consumers, thus will not be able to make a reliable prediction.</li>
-<li>Hubness – Some content occurs more frequently in the nearest neighbour lists of other content.
-This content is usually highly rated and popular and does not contribute any unique, personal
-preference information for recommendations due to the fact that this popular item may be liked
-by many users. These ‘main–stream’ products or content can behave like noise making memory–
-based collaborative filtering unable to make accurate predictions.</li>
+<li><strong>Concentration</strong> – Similarities between all consumers or content blend together and become the same. In this case memory–based collaborative filtering is unable to find the most similar content or consumers, thus will not be able to make a reliable prediction.</li>
+<li><strong>Hubness</strong> – Some content occurs more frequently in the nearest neighbour lists of other content. This content is usually highly rated and popular and does not contribute any unique, personal preference information for recommendations due to the fact that this popular item may be liked by many users. These ‘main–stream’ products or content can behave like <em>noise</em>, making memory–based collaborative filtering unable to make accurate predictions.</li>
 </ol>
-<p>In the 2010 article <em>Hubs in Space: Popular Nearest Neighbours in High–Dimensional Data</em> published in the Journal of Machine Learning Research, Nanopoulos et al. explain that “memory–based
-Collaborative filtering methods that use cosine–like similarity measurements to calculate pairwise
-similarities suffer hubness and concentration problems caused by high dimensionality of the data.
-Model–based methods with dimension reduction methods such as SVD cannot solve those problems
-either.”</p>
-<p>In order to reduce hubness one would have to reach intrinsic dimensionality, where any further
-reduction may lead to loss of information. Concentration and hubness – contrary to sparsity or skewness of the distribution of rating – are inherent properties of high dimensionality. The accuracy of forecasts
-can be adversely impacted by both phenomena, as they impair the representativeness of nearest
-neighbour lists. Although reducing hubness will improve the efficiency of prediction by using reciprocal
-proximity as a similarity calculation, the precision cannot rival the state–of–the–art model–based
-approaches.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>In the 2010 article <em>Hubs in Space: Popular Nearest Neighbours in High–Dimensional Data</em> published in the Journal of Machine Learning Research, Nanopoulos et al. explain that “memory–based Collaborative filtering methods that use cosine–like similarity measurements to calculate pairwise similarities suffer hubness and concentration problems caused by high dimensionality of the data. Model–based methods with dimension reduction methods such as SVD cannot solve those problems either.”</p>
+<p>In order to reduce hubness one would have to reach intrinsic dimensionality, where any further reduction may lead to loss of information. Concentration and hubness – contrary to sparsity or skewness of the distribution of rating – are inherent properties of high dimensionality. The accuracy of forecasts can be adversely impacted by both phenomena, as they impair the representativeness of nearest neighbour lists. Although reducing hubness will improve the efficiency of prediction by using reciprocal proximity as a similarity calculation, the precision cannot rival the state–of–the–art model–based approaches.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -186,10 +144,6 @@ Transactions on Information Theory <a href="#fnref:4" class="footnote-backref" r
 </div>
 
         <footer class="post-footer clearfix"><div class="share">
-            <a class="icon-twitter" href="https://twitter.com/share?text=Some%20Problems%20With%20Collaborative-Filtering&url=https%3a%2f%2fBeateZirdzina.github.io%2fmyblog%2fproblems-w-coll-f%2f"
-                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
     </div>
 </footer>
 
@@ -204,7 +158,7 @@ Transactions on Information Theory <a href="#fnref:4" class="footnote-backref" r
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a href="https://BeateZirdzina.github.io/myblog/">My New Hugo Site</a>
+                        <a href="https://beatezirdzina.github.io/username.github.io/">My New Hugo Site</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -221,9 +175,9 @@ Transactions on Information Theory <a href="#fnref:4" class="footnote-backref" r
             </div>
         </footer>
 
-        <script src="https://BeateZirdzina.github.io/myblog/js/jquery-1.11.3.min.js"></script>
-        <script src="https://BeateZirdzina.github.io/myblog/js/jquery.fitvids.js"></script>
-        <script src="https://BeateZirdzina.github.io/myblog/js/scripts.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://beatezirdzina.github.io/username.github.io/js/scripts.js"></script>
     </body>
 </html>
 

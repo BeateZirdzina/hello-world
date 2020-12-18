@@ -2,64 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://BeateZirdzina.github.io/myblog/post/</link>
+    <link>https://beatezirdzina.github.io/username.github.io/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Dec 2020 02:13:50 +0000</lastBuildDate><atom:link href="https://BeateZirdzina.github.io/myblog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 02:13:50 +0000</lastBuildDate><atom:link href="https://beatezirdzina.github.io/username.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Introductions - Recommender Systems &amp; Information Prissons we Build Ourselves</title>
-      <link>https://BeateZirdzina.github.io/myblog/introduction/</link>
-      <pubDate>Sat, 12 Dec 2020 02:13:50 +0000</pubDate>
+      <title>The Netflix Recommender System</title>
+      <link>https://beatezirdzina.github.io/username.github.io/netflix-recomm/</link>
+      <pubDate>Fri, 04 Dec 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://BeateZirdzina.github.io/myblog/introduction/</guid>
-      <description>Introduction If it is acceptable to be a little informal and colloquial, I want to start this paper off with something everyone is most probably thinking: “What a time to be alive!” Unfortunately, right now, this sentence would not be uttered with the usual cheer and merry, but more as a dreaded observation of the almost apocalyptic state of the world. However, if there is one industry prospering more than ever in this time, it has to be streaming services!</description>
+      <guid>https://beatezirdzina.github.io/username.github.io/netflix-recomm/</guid>
+      <description>What&amp;rsquo;s the Deal, Netflix? It is well known that most consumers do not really know what they want. Countless research papers have illustrated that the more choices the person is faced with, the harder and more exhausting the choosing process becomes and the more likely it is that the user will - in the end - come to the “none of the above” choice - choose not to choose! Neil Hunt et.</description>
     </item>
     
     <item>
       <title>The Netflix Prize</title>
-      <link>https://BeateZirdzina.github.io/myblog/netflix-prize/</link>
+      <link>https://beatezirdzina.github.io/username.github.io/netflix-prize/</link>
       <pubDate>Mon, 30 Nov 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://BeateZirdzina.github.io/myblog/netflix-prize/</guid>
+      <guid>https://beatezirdzina.github.io/username.github.io/netflix-prize/</guid>
       <description>Energizing Data Scientists All online commerce giants and social media conglomerates like Amazon, Alibaba, Twitter, Youtube and so on are fighting to get better at solving this one same problem – how to predict which things a user will like given observations of a user&amp;rsquo;s past behaviour.
-In 2006 Netflix famously offered a prize to solve this simple problem which had been around for years. This was one of the events that greatly energized research in recommender systems – the Netflix Prize.</description>
-    </item>
-    
-    <item>
-      <title>Collaborative Filtering</title>
-      <link>https://BeateZirdzina.github.io/myblog/collab-filter/</link>
-      <pubDate>Sat, 28 Nov 2020 02:13:50 +0000</pubDate>
-      
-      <guid>https://BeateZirdzina.github.io/myblog/collab-filter/</guid>
-      <description>Collaborative Filtering A key advantage of collaborative filtering over content–based filtering is that this approach studies the interactions between individuals or items without incorporating in–depth information of items and users. Thus, this method does not require background knowledge about the actual context or extensive information about the object in order to make recommendations. This system can essentially make a prediction without “understanding” a movie, a person, or music, etc. Thus, this approach can be applied broadly regardless of the contents of the data.</description>
+  In 2006 Netflix famously offered a prize to solve this simple problem which had been around for years. This was one of the events that greatly energized research in recommender systems – the Netflix Prize.</description>
     </item>
     
     <item>
       <title>Some Problems With Collaborative-Filtering</title>
-      <link>https://BeateZirdzina.github.io/myblog/problems-w-coll-f/</link>
+      <link>https://beatezirdzina.github.io/username.github.io/problems-w-coll-f/</link>
       <pubDate>Sat, 28 Nov 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://BeateZirdzina.github.io/myblog/problems-w-coll-f/</guid>
-      <description>Some Problems With Collaborative Filtering Sparsity When wanting to realise a recommender system one has to face the fact that they work best when used with datasets the size of, for example, those that Netflix, Amazon and Facebook can offer – namely huge datasets. The largest part of users would only review few of the offered items, but this is then remedied by the fact that there are at the least tens of thousands of items and millions of users.</description>
+      <guid>https://beatezirdzina.github.io/username.github.io/problems-w-coll-f/</guid>
+      <description>Sparsity When wanting to realise a recommender system one has to face the fact that they work best when used with datasets the size of, for example, those that Netflix, Amazon and Facebook can offer – huge datasets. The largest part of users would only review few of the offered items, but this is then remedied by the fact that there are at the least tens of thousands of items and sometimes millions of users.</description>
+    </item>
+    
+    <item>
+      <title>Collaborative Filtering</title>
+      <link>https://beatezirdzina.github.io/username.github.io/collab-filter/</link>
+      <pubDate>Thu, 26 Nov 2020 02:13:50 +0000</pubDate>
+      
+      <guid>https://beatezirdzina.github.io/username.github.io/collab-filter/</guid>
+      <description>Collaborative Filtering A key advantage of collaborative filtering over content–based filtering is that this approach studies the interactions between individuals or items without incorporating in–depth information of items and users. Thus, this method does not require background knowledge about the actual context or extensive information about the object in order to make recommendations. This system can essentially make a prediction without “understanding” a movie, a person, or music, etc. Thus, this approach can be applied broadly regardless of the contents of the data.</description>
     </item>
     
     <item>
       <title>Filtering Methods</title>
-      <link>https://BeateZirdzina.github.io/myblog/filtering-methods/</link>
+      <link>https://beatezirdzina.github.io/username.github.io/filtering-methods/</link>
       <pubDate>Wed, 25 Nov 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://BeateZirdzina.github.io/myblog/filtering-methods/</guid>
-      <description>What is it? Collaborative filtering uses previously acquired historical data on user behaviour and interactions between users and items to predict their preferences. This method is either aimed more at items – for example on Amazon, all the products have many buyers who most probably also buy other things. Products often bought together would thus be filtered in a group. The other option is user profile analysis – in this case the algorithm would look for users with similar “shopping carts” – these include both current and past purchases, to determine which users share similar habits.</description>
+      <guid>https://beatezirdzina.github.io/username.github.io/filtering-methods/</guid>
+      <description>What is it? Collaborative filtering uses previously acquired historical data on user behaviour and interactions between users and items to predict their preferences. This method is either aimed more at items – for example on Amazon, all the products have many buyers who most probably also buy other things. Products often bought together would thus be filtered in a group.
+The other option is user profile analysis – in this case the algorithm would look for users with similar “shopping carts” – these include both current and past purchases - to determine which users share similar habits.</description>
     </item>
     
     <item>
-      <title>Recommender Systems – What are they?</title>
-      <link>https://BeateZirdzina.github.io/myblog/theory-intro/</link>
+      <title>Recommendation Systems – What are they?</title>
+      <link>https://beatezirdzina.github.io/username.github.io/theory-intro/</link>
       <pubDate>Fri, 20 Nov 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://BeateZirdzina.github.io/myblog/theory-intro/</guid>
+      <guid>https://beatezirdzina.github.io/username.github.io/theory-intro/</guid>
       <description>A Little Bit of Theory Recommendation systems find their origins in various areas of artificial intelligence and mathematics, such as approximation theory, cognitive systems, information retrieval, prediction methods, and management science. Among a wide assortment of choices recommendation systems use the “input” of users – which in this context means just the community using the particular service – to determine interest groups and help incoming community members find content in line with their preferences more easily.</description>
+    </item>
+    
+    <item>
+      <title>Introduction - Recommendation Systems</title>
+      <link>https://beatezirdzina.github.io/username.github.io/introduction/</link>
+      <pubDate>Thu, 12 Nov 2020 02:13:50 +0000</pubDate>
+      
+      <guid>https://beatezirdzina.github.io/username.github.io/introduction/</guid>
+      <description>Introduction I want to start this off with something everyone is most probably thinking: “What a time to be alive!” Unfortunately, right now, this sentence would not be uttered with the usual cheer and merry, but more as a dreaded observation of the almost apocalyptic state of the world. However, if there is one industry prospering more than ever in this time, it has to be streaming services!
+There is something to be said about the popularity of streaming in these bizare times when reading headlines like “Netflix Will Reduce The Quality of Streaming in Europe to Prevent Internet Congestion”.</description>
     </item>
     
   </channel>
